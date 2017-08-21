@@ -1,3 +1,9 @@
+var keyOne = false;
+var keyTwo = false;
+
+
+
+
 //VARIABLES DEL MAPEADO.
 //Linea numero uno
   var a = document.querySelector('#box0')
@@ -21,20 +27,23 @@
 //FIN VARIABLES DEL MAPEADO.
 
 //BOTONERA.
-const btn_frente = document.querySelector('#arriba')
-btn_frente.addEventListener('click',Arriba)
+const btn_arriba = document.querySelector('#arriba')
+btn_arriba.addEventListener('click',Arriba)
 const btn_derecha = document.querySelector('#derecha')
 btn_derecha.addEventListener('click',Derecha)
-const btn_atras = document.querySelector('#abajo')
-btn_atras.addEventListener('click',Abajo)
+const btn_abajo = document.querySelector('#abajo')
+btn_abajo.addEventListener('click',Abajo)
 const btn_izquierda = document.querySelector('#izquierda')
 btn_izquierda.addEventListener('click',Izquierda)
+const btn_buscar = document.querySelector('#buscar')
+btn_buscar.addEventListener('click',Buscar)
 //FIN BOTONERA.
 
 //JUGADOR.
   function Player(posicion){
     this.posicion = posicion
     this.mover = Move
+    this.buscar = Buscar
   }
 
 
@@ -54,9 +63,12 @@ btn_izquierda.addEventListener('click',Izquierda)
           Move(alfacoy.posicion)
         }
         else if(alfacoy.posicion == casillas[1][2]) {
-          alfacoy.posicion = casillas[2][2]
-          Move(alfacoy.posicion)
-        }else {
+          if (keyOne) {
+            alfacoy.posicion = casillas[2][2]
+            Move(alfacoy.posicion)
+          }else {
+            consola.innerHTML = "No tenes la llave!!"
+          }}else {
         console.error("Error de parametro en funcion Abajo.")
       }
     }
@@ -124,6 +136,14 @@ btn_izquierda.addEventListener('click',Izquierda)
       }
     }
 
+
+    function Buscar(){
+
+      if (alfacoy.posicion == casillas[0][2]) {
+        keyOne = true
+        consola.innerHTML = "Encontraste una llave"
+      }
+    }
 
 
 
@@ -201,6 +221,8 @@ btn_izquierda.addEventListener('click',Izquierda)
     h.classList.remove('box-red')
     i.classList.remove('box-red')
   }
+
+
 //FIN JUGADOR
 
 //CONSOLA.
