@@ -12,6 +12,7 @@
 <body>
 
   <h1>Movimiento sobre cuadriculas</h1>
+  <p>*El objetivo es llegar a la zona marcada con "Azul" en el mapa. Para llegar el jugador debera atravesar diferentes obstaculos y asi conseguir abrir las puertas que se interponen.</p>
 
   <div class="container">
 
@@ -32,10 +33,15 @@
         <div class="row">
           <div class="box" id="box6"></div>
           <div class="box" id="box7"></div>
-          <div class="box" id="box8"></div>
+          <div class="box box-blue" id="box8"></div>
         </div>
       </div>
     </div>
+
+  <button type="button" name="button" id="arriba">Arriba</button>
+  <button type="button" name="button" id="derecha">Derecha</button>
+  <button type="button" name="button" id="izquierda">Izquierda</button>
+  <button type="button" name="button" id="abajo">Abajo</button>
 
   <div class="consola">
     <h3>Consola:</h3>
@@ -47,5 +53,6 @@
 
 
   <script src="js/main.js"></script>
+  <script src="js/character.js"></script>
 </body>
 </html>
