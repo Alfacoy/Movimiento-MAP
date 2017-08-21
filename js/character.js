@@ -1,3 +1,4 @@
-var alfacoy = new Player(casillas[0][0]);
+var alfacoy = new Player(casillas[0][0])
 
-alfacoy.mover(alfacoy.posicion);
+
+alfacoy.mover(alfacoy.posicion)
