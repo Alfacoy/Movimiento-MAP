@@ -6,23 +6,31 @@ var keyTwo = false;
 
 //VARIABLES DEL MAPEADO.
 //Linea numero uno
-  var a = document.querySelector('#box0')
-  var b = document.querySelector('#box1')
-  var c = document.querySelector('#box2')
+  var l1a = document.querySelector('#box0')
+  var l1b = document.querySelector('#box1')
+  var l1c = document.querySelector('#box2')
+  var l1d = document.querySelector('#box3')
 
 //Linea numero dos
-  var d = document.querySelector('#box3')
-  var e = document.querySelector('#box4')
-  var f = document.querySelector('#box5')
+  var l2a = document.querySelector('#box4')
+  var l2b = document.querySelector('#box5')
+  var l2c = document.querySelector('#box6')
+  var l2d = document.querySelector('#box7')
 
 //Linea numero tres
-  var g = document.querySelector('#box6')
-  var h = document.querySelector('#box7')
-  var i = document.querySelector('#box8')
+  var l3a = document.querySelector('#box8')
+  var l3b = document.querySelector('#box9')
+  var l3c = document.querySelector('#box10')
+  var l3d = document.querySelector('#box11')
 
+//Linea numero cuatro
+  var l4a = document.querySelector('#box12')
+  var l4b = document.querySelector('#box13')
+  var l4c = document.querySelector('#box14')
+  var l4d = document.querySelector('#box15')
 
-  var casillas = new Array(9);
-    casillas = [ [a,b,c],[d,e,f],[g,h,i] ]
+  var casillas = new Array();
+    casillas = [ [l1a,l1b,l1c,l1d],[l2a,l2b,l2c,l2d],[l3a,l3b,l3c,l3d],[l4a,l4b,l4c,l4d] ]
 
 //FIN VARIABLES DEL MAPEADO.
 
@@ -151,9 +159,9 @@ btn_buscar.addEventListener('click',Buscar)
   function Move(posicion){
     if (posicion == casillas[0][0]) {
       Reset()
-      a.classList.add('box-red')
-      b.classList.add('box-white')
-      d.classList.add('box-white')
+      l1a.classList.add('box-red')
+      l1b.classList.add('box-white')
+      l2a.classList.add('box-white')
     }else if(posicion == casillas[1][0]){
       Reset()
       d.classList.add('box-red')
@@ -201,25 +209,39 @@ btn_buscar.addEventListener('click',Buscar)
 
 
   function Reset(){
-    a.classList.remove('box-white')
-    b.classList.remove('box-white')
-    c.classList.remove('box-white')
-    d.classList.remove('box-white')
-    e.classList.remove('box-white')
-    f.classList.remove('box-white')
-    g.classList.remove('box-white')
-    h.classList.remove('box-white')
-    i.classList.remove('box-white')
+    l1a.classList.remove('box-white')
+    l1b.classList.remove('box-white')
+    l1c.classList.remove('box-white')
+    l1d.classList.remove('box-white')
+    l2a.classList.remove('box-white')
+    l2b.classList.remove('box-white')
+    l2c.classList.remove('box-white')
+    l2d.classList.remove('box-white')
+    l3a.classList.remove('box-white')
+    l3b.classList.remove('box-white')
+    l3c.classList.remove('box-white')
+    l3d.classList.remove('box-white')
+    l4a.classList.remove('box-white')
+    l4b.classList.remove('box-white')
+    l4c.classList.remove('box-white')
+    l4d.classList.remove('box-white')
 
-    a.classList.remove('box-red')
-    b.classList.remove('box-red')
-    c.classList.remove('box-red')
-    d.classList.remove('box-red')
-    e.classList.remove('box-red')
-    f.classList.remove('box-red')
-    g.classList.remove('box-red')
-    h.classList.remove('box-red')
-    i.classList.remove('box-red')
+    l1a.classList.remove('box-red')
+    l1b.classList.remove('box-red')
+    l1c.classList.remove('box-red')
+    l1d.classList.remove('box-red')
+    l2a.classList.remove('box-red')
+    l2b.classList.remove('box-red')
+    l2c.classList.remove('box-red')
+    l2d.classList.remove('box-red')
+    l3a.classList.remove('box-red')
+    l3b.classList.remove('box-red')
+    l3c.classList.remove('box-red')
+    l3d.classList.remove('box-red')
+    l4a.classList.remove('box-red')
+    l4b.classList.remove('box-red')
+    l4c.classList.remove('box-red')
+    l4d.classList.remove('box-red')
   }
 
 
