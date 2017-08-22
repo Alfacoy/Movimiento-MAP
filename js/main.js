@@ -66,36 +66,65 @@ btn_buscar.addEventListener('click',Buscar)
           alfacoy.posicion = casillas[2][0]
           Move(alfacoy.posicion)
         }
-        else if(alfacoy.posicion == casillas[0][1]) {
-          alfacoy.posicion = casillas[1][1]
+        else if(alfacoy.posicion == casillas[2][0]) {
+          alfacoy.posicion = casillas[3][0]
           Move(alfacoy.posicion)
         }
-        else if(alfacoy.posicion == casillas[1][2]) {
-          if (keyOne) {
-            alfacoy.posicion = casillas[2][2]
-            Move(alfacoy.posicion)
-          }else {
-            consola.innerHTML = "No tenes la llave!!"
-          }}else {
+        else if(alfacoy.posicion == casillas[0][3]) {
+          alfacoy.posicion = casillas[1][3]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[1][3]) {
+          alfacoy.posicion = casillas[2][3]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[2][3]) {
+          alfacoy.posicion = casillas[3][3]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[2][2]) {
+          alfacoy.posicion = casillas[3][2]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[2][1]) {
+          alfacoy.posicion = casillas[3][1]
+          Move(alfacoy.posicion)
+        }else{
         console.error("Error de parametro en funcion Abajo.")
       }
     }
 
     function Arriba(){
-      if(alfacoy.posicion == casillas[1][0]) {
-          alfacoy.posicion = casillas[0][0]
+      if(alfacoy.posicion == casillas[3][0]) {
+          alfacoy.posicion = casillas[2][0]
           Move(alfacoy.posicion)
         }
         else if(alfacoy.posicion == casillas[2][0]) {
           alfacoy.posicion = casillas[1][0]
           Move(alfacoy.posicion)
         }
-        else if(alfacoy.posicion == casillas[1][1]) {
-          alfacoy.posicion = casillas[0][1]
+        else if(alfacoy.posicion == casillas[1][0]) {
+          alfacoy.posicion = casillas[0][0]
           Move(alfacoy.posicion)
         }
-        else if(alfacoy.posicion == casillas[2][2]) {
-          alfacoy.posicion = casillas[1][2]
+        else if(alfacoy.posicion == casillas[3][1]) {
+          alfacoy.posicion = casillas[2][1]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[3][2]) {
+          alfacoy.posicion = casillas[2][2]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[3][3]) {
+          alfacoy.posicion = casillas[2][3]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[2][3]) {
+          alfacoy.posicion = casillas[1][3]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[1][3]) {
+          alfacoy.posicion = casillas[0][3]
           Move(alfacoy.posicion)
         }else {
         console.error("Error de parametro en funcion Arriba.")
@@ -111,20 +140,40 @@ btn_buscar.addEventListener('click',Buscar)
           alfacoy.posicion = casillas[0][2]
           Move(alfacoy.posicion)
         }
-        else if(alfacoy.posicion == casillas[1][1]) {
-          alfacoy.posicion = casillas[1][2]
+        else if(alfacoy.posicion == casillas[0][2]) {
+          alfacoy.posicion = casillas[0][3]
           Move(alfacoy.posicion)
         }
-        else if(alfacoy.posicion == casillas[2][0]) {
-          alfacoy.posicion = casillas[2][1]
+        else if(alfacoy.posicion == casillas[1][2]) {
+          alfacoy.posicion = casillas[1][3]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[2][2]) {
+          alfacoy.posicion = casillas[2][3]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[3][0]) {
+          alfacoy.posicion = casillas[3][1]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[3][1]) {
+          alfacoy.posicion = casillas[3][2]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[3][2]) {
+          alfacoy.posicion = casillas[3][3]
           Move(alfacoy.posicion)
         }else {
-        console.error("Error de parametro en funcion Derecha.")
+        console.error(`Error de parametro en funcion Derecha.`)
       }
     }
 
     function Izquierda(){
-      if(alfacoy.posicion == casillas[0][2]) {
+      if(alfacoy.posicion == casillas[0][3]) {
+          alfacoy.posicion = casillas[0][2]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[0][2]) {
           alfacoy.posicion = casillas[0][1]
           Move(alfacoy.posicion)
         }
@@ -132,12 +181,28 @@ btn_buscar.addEventListener('click',Buscar)
           alfacoy.posicion = casillas[0][0]
           Move(alfacoy.posicion)
         }
+        else if(alfacoy.posicion == casillas[1][3]) {
+          alfacoy.posicion = casillas[1][2]
+          Move(alfacoy.posicion)
+        }
         else if(alfacoy.posicion == casillas[1][2]) {
           alfacoy.posicion = casillas[1][1]
           Move(alfacoy.posicion)
         }
-        else if(alfacoy.posicion == casillas[2][1]) {
-          alfacoy.posicion = casillas[2][0]
+        else if(alfacoy.posicion == casillas[2][3]) {
+          alfacoy.posicion = casillas[2][2]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[3][3]) {
+          alfacoy.posicion = casillas[3][2]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[3][2]) {
+          alfacoy.posicion = casillas[3][1]
+          Move(alfacoy.posicion)
+        }
+        else if(alfacoy.posicion == casillas[3][1]) {
+          alfacoy.posicion = casillas[3][0]
           Move(alfacoy.posicion)
         }else {
         console.error("Error de parametro en funcion Izquierda.")
@@ -157,49 +222,105 @@ btn_buscar.addEventListener('click',Buscar)
 
 
   function Move(posicion){
+  //Primera Linea.
     if (posicion == casillas[0][0]) {
       Reset()
       l1a.classList.add('box-red')
       l1b.classList.add('box-white')
       l2a.classList.add('box-white')
-    }else if(posicion == casillas[1][0]){
+    }else if(posicion == casillas[0][1]){
       Reset()
-      d.classList.add('box-red')
-      a.classList.add('box-white')
-      g.classList.add('box-white')
-    }else if(posicion == casillas[2][0]){
+      l1b.classList.add('box-red')
+      l1a.classList.add('box-white')
+      l1c.classList.add('box-white')
+    }
+    else if(posicion == casillas[0][2]){
       Reset()
-      g.classList.add('box-red')
-      d.classList.add('box-white')
-      h.classList.add('box-white')
-    }else if(posicion == casillas[0][1]) {
+      l1c.classList.add('box-red')
+      l1b.classList.add('box-white')
+      l1d.classList.add('box-white')
+    }
+    else if(posicion == casillas[0][3]){
       Reset()
-      b.classList.add('box-red')
-      a.classList.add('box-white')
-      c.classList.add('box-white')
-      e.classList.add('box-white')
-    }else if(posicion == casillas[1][1]) {
+      l1d.classList.add('box-red')
+      l1c.classList.add('box-white')
+      l2d.classList.add('box-white')
+    }
+    //Segunda linea.
+    else if(posicion == casillas[1][0]){
       Reset()
-      e.classList.add('box-red')
-      b.classList.add('box-white')
-      f.classList.add('box-white')
-    }else if(posicion == casillas[2][1]) {
+      l2a.classList.add('box-red')
+      l1a.classList.add('box-white')
+      l3a.classList.add('box-white')
+    }
+    else if(posicion == casillas[1][1]){
       Reset()
-      h.classList.add('box-red')
-      g.classList.add('box-white')
-    }else if(posicion == casillas[0][2]) {
+      l2b.classList.add('box-red')
+    }
+    else if(posicion == casillas[1][2]){
       Reset()
-      c.classList.add('box-red')
-      b.classList.add('box-white')
-    }else if(posicion == casillas[1][2]) {
+      l2c.classList.add('box-red')
+      l2b.classList.add('box-white')
+      l2d.classList.add('box-white')
+    }
+    else if(posicion == casillas[1][3]){
       Reset()
-      f.classList.add('box-red')
-      e.classList.add('box-white')
-      i.classList.add('box-white')
-    }else if(posicion == casillas[2][2]) {
+      l2d.classList.add('box-red')
+      l1d.classList.add('box-white')
+      l2c.classList.add('box-white')
+      l3d.classList.add('box-white')
+    }
+    //Tercera linea.
+    else if(posicion == casillas[2][0]){
       Reset()
-      i.classList.remove('box-blue')
-      i.classList.add('box-red')
+      l3a.classList.add('box-red')
+      l2a.classList.add('box-white')
+      l4a.classList.add('box-white')
+    }
+    else if(posicion == casillas[2][1]){
+      Reset()
+      l3b.classList.add('box-red')
+      l4b.classList.add('box-white')
+    }
+    else if(posicion == casillas[2][2]){
+      Reset()
+      l3c.classList.add('box-red')
+      l4c.classList.add('box-white')
+      l3d.classList.add('box-white')
+    }
+    else if(posicion == casillas[2][3]){
+      Reset()
+      l3d.classList.add('box-red')
+      l3c.classList.add('box-white')
+      l2d.classList.add('box-white')
+      l4d.classList.add('box-white')
+    }
+    //Cuarta linea.
+    else if(posicion == casillas[3][0]){
+      Reset()
+      l4a.classList.add('box-red')
+      l3a.classList.add('box-white')
+      l4b.classList.add('box-white')
+    }
+    else if(posicion == casillas[3][1]){
+      Reset()
+      l4b.classList.add('box-red')
+      l3b.classList.add('box-white')
+      l4a.classList.add('box-white')
+      l4c.classList.add('box-white')
+    }
+    else if(posicion == casillas[3][2]){
+      Reset()
+      l4c.classList.add('box-red')
+      l4d.classList.add('box-white')
+      l4b.classList.add('box-white')
+      l3c.classList.add('box-white')
+    }
+    else if(posicion == casillas[3][3]){
+      Reset()
+      l4d.classList.add('box-red')
+      l4c.classList.add('box-white')
+      l3d.classList.add('box-white')
     }else{
       console.error("Hubo un error de posicionamiento.")
     }
