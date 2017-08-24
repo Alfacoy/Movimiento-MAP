@@ -1,4 +1,4 @@
-var keyOne = false;
+var keyOne = true;
 var keyTwo = false;
 
 
@@ -133,8 +133,12 @@ btn_buscar.addEventListener('click',Buscar)
 
     function Derecha(){
       if (alfacoy.posicion == casillas[0][0]) {
-        alfacoy.posicion = casillas[0][1]
-        Move(alfacoy.posicion)
+        if (keyTwo) {
+          alfacoy.posicion = casillas[0][1]
+          Move(alfacoy.posicion)
+          consola.innerHTML = "Abriste la puerta!"
+        }
+        consola.innerHTML = "La puerta esta bloqueada."
       }
         else if(alfacoy.posicion == casillas[0][1]) {
           alfacoy.posicion = casillas[0][2]
@@ -225,23 +229,27 @@ btn_buscar.addEventListener('click',Buscar)
   //Primera Linea.
     if (posicion == casillas[0][0]) {
       Reset()
+      Location()
       l1a.classList.add('box-red')
       l1b.classList.add('box-white')
       l2a.classList.add('box-white')
     }else if(posicion == casillas[0][1]){
       Reset()
+      Location()
       l1b.classList.add('box-red')
       l1a.classList.add('box-white')
       l1c.classList.add('box-white')
     }
     else if(posicion == casillas[0][2]){
       Reset()
+      Location()
       l1c.classList.add('box-red')
       l1b.classList.add('box-white')
       l1d.classList.add('box-white')
     }
     else if(posicion == casillas[0][3]){
       Reset()
+      Location()
       l1d.classList.add('box-red')
       l1c.classList.add('box-white')
       l2d.classList.add('box-white')
@@ -249,22 +257,26 @@ btn_buscar.addEventListener('click',Buscar)
     //Segunda linea.
     else if(posicion == casillas[1][0]){
       Reset()
+      Location()
       l2a.classList.add('box-red')
       l1a.classList.add('box-white')
       l3a.classList.add('box-white')
     }
     else if(posicion == casillas[1][1]){
       Reset()
+      Location()
       l2b.classList.add('box-red')
     }
     else if(posicion == casillas[1][2]){
       Reset()
+      Location()
       l2c.classList.add('box-red')
       l2b.classList.add('box-white')
       l2d.classList.add('box-white')
     }
     else if(posicion == casillas[1][3]){
       Reset()
+      Location()
       l2d.classList.add('box-red')
       l1d.classList.add('box-white')
       l2c.classList.add('box-white')
@@ -273,23 +285,27 @@ btn_buscar.addEventListener('click',Buscar)
     //Tercera linea.
     else if(posicion == casillas[2][0]){
       Reset()
+      Location()
       l3a.classList.add('box-red')
       l2a.classList.add('box-white')
       l4a.classList.add('box-white')
     }
     else if(posicion == casillas[2][1]){
       Reset()
+      Location()
       l3b.classList.add('box-red')
       l4b.classList.add('box-white')
     }
     else if(posicion == casillas[2][2]){
       Reset()
+      Location()
       l3c.classList.add('box-red')
       l4c.classList.add('box-white')
       l3d.classList.add('box-white')
     }
     else if(posicion == casillas[2][3]){
       Reset()
+      Location()
       l3d.classList.add('box-red')
       l3c.classList.add('box-white')
       l2d.classList.add('box-white')
@@ -298,12 +314,14 @@ btn_buscar.addEventListener('click',Buscar)
     //Cuarta linea.
     else if(posicion == casillas[3][0]){
       Reset()
+      Location()
       l4a.classList.add('box-red')
       l3a.classList.add('box-white')
       l4b.classList.add('box-white')
     }
     else if(posicion == casillas[3][1]){
       Reset()
+      Location()
       l4b.classList.add('box-red')
       l3b.classList.add('box-white')
       l4a.classList.add('box-white')
@@ -311,6 +329,7 @@ btn_buscar.addEventListener('click',Buscar)
     }
     else if(posicion == casillas[3][2]){
       Reset()
+      Location()
       l4c.classList.add('box-red')
       l4d.classList.add('box-white')
       l4b.classList.add('box-white')
@@ -318,6 +337,7 @@ btn_buscar.addEventListener('click',Buscar)
     }
     else if(posicion == casillas[3][3]){
       Reset()
+      Location()
       l4d.classList.add('box-red')
       l4c.classList.add('box-white')
       l3d.classList.add('box-white')

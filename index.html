@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Lab: Mapa</title>
 
   <link rel="stylesheet" href="css/index.css">
 
@@ -12,9 +12,10 @@
 <body>
 
   <h1>Movimiento sobre cuadriculas</h1>
+  <hr>
   <p>*El objetivo es llegar a la zona marcada con "Azul" en el mapa. Para llegar el jugador debera atravesar diferentes obstaculos y asi conseguir abrir las puertas que se interponen.</p>
   <p>*Utiliza el boton de "Buscar" para hallar diferentes elementos que te serviran en el camino.</p>
-
+  <hr>
   <div class="container">
 
 
@@ -22,38 +23,52 @@
       <div class="box-content">
         <h2 class="title">Mapa</h2>
         <div class="row">
-          <div class="box" id="box0"></div>
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="box" id="box3"></div>
+          <div class="box" id="box0">Pasillo</div>
+          <div class="box" id="box1">Room</div>
+          <div class="box" id="box2">Cocina</div>
+          <div class="box" id="box3">Cocina</div>
         </div>
         <div class="row">
-          <div class="box" id="box4"></div>
-          <div class="box box-blue" id="box5"></div>
-          <div class="box" id="box6"></div>
-          <div class="box" id="box7"></div>
+          <div class="box" id="box4">Pasillo</div>
+          <div class="box box-blue" id="box5">Meta</div>
+          <div class="box" id="box6">Room</div>
+          <div class="box" id="box7">Pasillo</div>
         </div>
         <div class="row">
-          <div class="box" id="box8"></div>
-          <div class="box" id="box9"></div>
-          <div class="box" id="box10"></div>
-          <div class="box" id="box11"></div>
+          <div class="box" id="box8">Room</div>
+          <div class="box" id="box9">Escale<br>ra</div>
+          <div class="box" id="box10">Sala</div>
+          <div class="box" id="box11">Sala</div>
         </div>
         <div class="row">
-          <div class="box" id="box12"></div>
-          <div class="box" id="box13"></div>
-          <div class="box" id="box14"></div>
-          <div class="box" id="box15"></div>
+          <div class="box" id="box12">Pasillo</div>
+          <div class="box" id="box13">Pasillo</div>
+          <div class="box" id="box14">Sala</div>
+          <div class="box" id="box15">Sala</div>
         </div>
       </div>
     </div>
 
-    <div class="center">
-      <button type="button" name="button" id="arriba" class="btn">Arriba</button>
-      <button type="button" name="button" id="izquierda" class="btn">Izquierda</button>
-      <button type="button" name="button" id="derecha" class="btn">Derecha</button>
-      <button type="button" name="button" id="abajo" class="btn">Abajo</button>
-      <button type="button" name="button" id="buscar" class="btn">Buscar</button>
+      <div class="center">
+        <button type="button" name="button" id="arriba" class="btn">W</button>
+      </div>
+
+      <div class="center">
+        <button type="button" name="button" id="izquierda" class="btn">A</button>
+        <button type="button" name="button" id="abajo" class="btn">S</button>
+        <button type="button" name="button" id="derecha" class="btn">D</button>
+      </div>
+
+      <div class="center">
+        <button type="button" name="button" id="buscar" class="btn">Buscar</button>
+        <button type="button" name="button" id="observar" class="btn">Observar</button>
+
+      </div>
+
+
+
+
+
     </div>
 
 
@@ -67,6 +82,7 @@
 
 
   <script src="js/main.js"></script>
+  <script src="js/castle.js"></script>
   <script src="js/character.js"></script>
 
 </body>
