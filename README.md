@@ -1,3 +1,9 @@
+#FUERA DE SERVICIO!!
+
+Estamos integrando el proyecto a VUE y FIREBASE !! 
+
+PROXIMAMENTE LO SUBIREMOS A GIT
+
 # Movimiento-MAP
 Es un complemento que pienso agregar a mi proyecto de juego "Guerra Alpha".
 
