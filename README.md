@@ -2,7 +2,7 @@
 
 Estamos integrando el proyecto a VUE y FIREBASE !! 
 
-PROXIMAMENTE LO SUBIREMOS A GIT
+LINK A LA APLICACION https://github.com/Alfacoy/vpg
 
 # Movimiento-MAP
 Es un complemento que pienso agregar a mi proyecto de juego "Guerra Alpha".
